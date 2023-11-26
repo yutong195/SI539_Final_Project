@@ -1,0 +1,8 @@
+body {
+    background-color: #FFFDD0;
+}
+
+.portfolio_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+}
