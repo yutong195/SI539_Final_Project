@@ -2,6 +2,18 @@ body {
     background-color: #fffee6;
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.header h1 {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-fill-mode:forwards;
+    animation-iteration-count: 1;
+}
+
 .portfolio_grid{
     display: grid;
     grid-template-columns: auto auto;
@@ -26,8 +38,7 @@ body {
 }
 
 .what_i_do{
-    color: blue;
-    opacity: 0.6;
+    color: rgb(0, 168, 163);
 }
 
 .header p{
@@ -36,4 +47,32 @@ body {
 
 .AR_VR{
     text-align: center;
+}
+
+.vr_facial_expression img{
+    width: 60%;
+    height: auto;
+    position: relative;
+}
+
+.read_more {
+    position: absolute;
+    bottom: -80px;
+    left: 120px;  
+    font-size: 24px; 
+    border: solid 4px rgb(0, 168, 163);
+    margin: 10px 15px;
+    background-color: #fffee6;
+    color: rgb(0, 168, 163);
+}
+
+.vr_facial_expression h3{
+    max-width: 500px;
+    text-decoration: underline;
+}
+
+.vr_facial_expression p{
+    max-width: 500px;
+    color: rgb(0, 168, 163);
+    
 }
