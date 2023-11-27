@@ -6,3 +6,16 @@ body {
     display: grid;
     grid-template-columns: auto auto;
 }
+
+.about_me{
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-decoration: none;
+    color: none;
+}
+
+.about_me:hover{
+    text-decoration: underline wavy;
+    color: purple;
+}
