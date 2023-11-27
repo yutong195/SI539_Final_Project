@@ -61,9 +61,9 @@ body {
     position: absolute;
     bottom: -20px;
     left: 20px;  
-    font-size: 20px; 
-    border: solid 4px rgb(0, 168, 163);
-    margin: 10px 15px;
+    font-size: 16px; 
+    border: solid 2px rgb(0, 168, 163);
+    padding: 6px 8px;
     background-color: #fffee6;
     color: rgb(0, 168, 163);
 }
@@ -88,10 +88,10 @@ body {
 .dku_ar_campus div {
     position: absolute;
     bottom: -20px;
-    left: 640px;  
-    font-size: 20px; 
-    border: solid 4px rgb(0, 168, 163);
-    margin: 10px 15px;
+    left: 660px;  
+    font-size: 16px; 
+    border: solid 2px rgb(0, 168, 163);
+    padding: 6px 8px;
     background-color: #fffee6;
     color: rgb(0, 168, 163);
 }
