@@ -16,8 +16,10 @@ body {
 
 .portfolio_grid{
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content:space-evenly;
+    grid-template-columns: repeat(2, minmax(0, 1fr));;
+    justify-content:center;
+    align-items: start;
+    gap: 20px;
 }
 
 .about_me a{
@@ -55,11 +57,11 @@ body {
     position: relative;
 }
 
-.read_more {
+.vr_facial_expression div {
     position: absolute;
-    bottom: -80px;
-    left: 120px;  
-    font-size: 24px; 
+    bottom: -20px;
+    left: 20px;  
+    font-size: 20px; 
     border: solid 4px rgb(0, 168, 163);
     margin: 10px 15px;
     background-color: #fffee6;
@@ -67,12 +69,40 @@ body {
 }
 
 .vr_facial_expression h3{
-    max-width: 500px;
+    max-width: 400px;
     text-decoration: underline;
 }
 
 .vr_facial_expression p{
-    max-width: 500px;
+    max-width: 400px;
+    color: rgb(0, 168, 163);
+    
+}
+
+.dku_ar_campus img{
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+.dku_ar_campus div {
+    position: absolute;
+    bottom: -20px;
+    left: 640px;  
+    font-size: 20px; 
+    border: solid 4px rgb(0, 168, 163);
+    margin: 10px 15px;
+    background-color: #fffee6;
+    color: rgb(0, 168, 163);
+}
+
+.dku_ar_campus h3{
+    max-width: 400px;
+    text-decoration: underline;
+}
+
+.dku_ar_campus p{
+    max-width: 400px;
     color: rgb(0, 168, 163);
     
 }
