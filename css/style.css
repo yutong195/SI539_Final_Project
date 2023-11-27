@@ -1,10 +1,11 @@
 body {
-    background-color: #FFFDD0;
+    background-color: #fffee6;
 }
 
 .portfolio_grid{
     display: grid;
     grid-template-columns: auto auto;
+    justify-content:space-evenly;
 }
 
 .about_me a{
@@ -18,4 +19,21 @@ body {
 .about_me a:hover{
     text-decoration: underline wavy;
     color: purple;
+}
+
+.contact{
+    text-align: center;
+}
+
+.what_i_do{
+    color: blue;
+    opacity: 0.6;
+}
+
+.header p{
+    max-width: 700px;
+}
+
+.AR_VR{
+    text-align: center;
 }
