@@ -153,6 +153,12 @@ blockquote {
 
 }
 
+#songList{
+    width: 30%;
+    display: block; /* Change its display property to block */
+    margin: 0 auto; /* Auto margins on both sides */
+    margin-bottom: 5px;
+}
 
 #songList option.playing {
     color: rgb(2, 193, 114); /* Highlight for the current song */
@@ -164,4 +170,6 @@ blockquote {
     text-align: center; /* Centers the text */
     color: #000; /* Set the text color */
     margin-top: 10px; /* Spacing above the text */
+    margin-bottom: 5px;
 }
+
