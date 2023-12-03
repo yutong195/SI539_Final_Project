@@ -160,17 +160,109 @@ body {
     opacity: 0.5; /* Image fades */
 }
 
+
+
 .vr_facial_expression:hover p {
     opacity: 1; /* Text appears */
 }
 
-.dku_ar_campus img{
-    width: 50%;
-    height: auto;
+.dku_ar_campus{
     position: relative;
+    width: 60%; /* Adjust as needed */
+    border: black solid 3px;
+    background-color: #fffee6;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 2);
+    /* left: 100px; */
 }
 
-.dku_ar_campus div {
+.dku_ar_campus img{
+    width: 100%;
+    height: 50%;
+    /* position: relative; */
+    transition: opacity 0.3s ease;
+}
+
+.dku_ar_campus .hover {
+    position: absolute;
+    /* bottom: -20px;
+    left: 20px;   */
+    font-size: 16px; 
+    border: solid 2px rgb(0, 168, 163);
+    padding: 6px 8px;
+    background-color: #fffee6;
+    color: rgb(0, 168, 163);
+    top: 55%; 
+    left: 7%; 
+    
+}
+
+/* Hide the tap button initially */
+.dku_ar_campus .tap {
+    position: absolute;
+    /* bottom: -20px;
+    left: 20px;   */
+    font-size: 16px; 
+    border: solid 2px rgb(0, 168, 163);
+    padding: 6px 8px;
+    background-color: #fffee6;
+    color: rgb(0, 168, 163);
+    top: 55%; 
+    left: 7%; 
+    opacity: 0;
+    
+}
+
+
+.dku_ar_campus:hover .hover {
+    opacity: 0; /* Image fades */
+}
+
+.dku_ar_campus:hover .tap {
+    opacity: 1; /* Text appears */
+}
+
+.dku_ar_campus h3{
+    max-width: 400px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.dku_ar_campus p{
+    /* max-width: 400px;
+    color: rgb(0, 168, 163); */
+    position: absolute;
+    top: 30%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    color: white; /* Choose color that is visible on your images */
+    opacity: 0; /* Hide initially */
+    transition: opacity 0.3s ease;
+    /* text-align: center; */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    /* max-width: 200%; */
+    width: 300px;
+    font-size: 0.9em;
+    /* box-sizing: border-box; */
+}
+
+.dku_ar_campus p span{
+    font-weight: bold;
+}
+
+
+/* Hover effects */
+.dku_ar_campus:hover img {
+    opacity: 0.5; /* Image fades */
+}
+
+.dku_ar_campus:hover p {
+    opacity: 1; /* Text appears */
+}
+
+/* .dku_ar_campus div {
     position: absolute;
     bottom: -20px;
     left: 660px;  
@@ -179,9 +271,9 @@ body {
     padding: 6px 8px;
     background-color: #fffee6;
     color: rgb(0, 168, 163);
-}
+} */
 
-.dku_ar_campus h3{
+/* .dku_ar_campus h3{
     max-width: 400px;
     text-decoration: underline;
 }
@@ -190,7 +282,7 @@ body {
     max-width: 400px;
     color: rgb(0, 168, 163);
     
-}
+} */
 
 
 /* for song player styling */
