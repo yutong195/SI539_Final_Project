@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var audio = new Audio();
     var basePath = './songs/';
-    var songs = ['Perfect-Ed Shareen.mp3','Photograph-Ed Shareen.mp3','River Flows In You-Yiruma.mp3',
-    'Drifting Cloud-Masaaki Kishibe.mp3','Miracle Mountain-Masaaki Kishibe.mp3']; // Replace these with your actual song names
+    var songs = ['Perfect_Ed Shareen.mp3','Photograph_Ed Shareen.mp3','River Flows In You_Yiruma.mp3',
+    'Drifting Cloud_Masaaki Kishibe.mp3','Miracle Mountain_Masaaki Kishibe.mp3']; // Replace these with your actual song names
     songs = songs.map(song => basePath + song); // Prepend base path to each song name
 
     var currentSongIndex = 0;
