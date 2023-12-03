@@ -168,11 +168,12 @@ body {
 
 .dku_ar_campus{
     position: relative;
-    width: 60%; /* Adjust as needed */
+    width: 53%; /* Adjust as needed */
     border: black solid 3px;
     background-color: #fffee6;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 2);
+    height: auto;
     /* left: 100px; */
 }
 
@@ -326,14 +327,23 @@ body {
 
 }
 
+#songList{
+    width: 30%;
+    display: block; /* Change its display property to block */
+    margin: 0 auto; /* Auto margins on both sides */
+    margin-bottom: 5px;
+}
 
 #songList option.playing {
-    color: red; /* Highlight for the current song */
+    color: rgb(2, 193, 114); /* Highlight for the current song */
+    font-weight: bold;
+    font-style: italic;
 }
 
 #currentSongInfo {
     text-align: center; /* Centers the text */
     color: #000; /* Set the text color */
     margin-top: 10px; /* Spacing above the text */
+    margin-bottom: 5px;
 }
 

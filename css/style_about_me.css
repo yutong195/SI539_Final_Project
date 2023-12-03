@@ -83,3 +83,85 @@ body{
     grid-column: 2; /* Position in column 2 */
     overflow: auto; /* In case the text is too much, it will be scrollable */
 }
+
+.hci-section {
+    /* background: rgb(204, 230, 255, 0.9); */
+    background: linear-gradient(to bottom right, rgb(204, 230, 255,1.5) 0%, white 50%, rgb(186, 200, 252,1.5) 100%);
+    padding: 50px;
+    height: calc(100% - 100px); /* Adjust height based on the padding */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.2em;
+    width: 60%; /* Adjust the width as needed */
+    margin: 20px auto;
+    line-height: 1.5;
+}
+
+.hci-footer p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* for song player styling */
+.hidden {
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+/* #musicPlayer {
+    
+} */
+.songPlayer {
+    position: fixed; /* Fixed position relative to the viewport */
+    top: 90%; /* Vertically center */
+    right: 0; /* Align to the right side */
+    transform: translateY(-50%); /* Vertically center with respect to its own height */
+    /* Your existing styles for songPlayer */
+    border: solid black 3px;
+    background-color: #fffee6;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+
+#progressBarContainer {
+    width: 80%; /* One-third of the screen width */
+    height: 8px;
+    background-color: black;
+    margin: auto; /* Center the progress bar */
+    cursor: pointer;
+}
+
+#progressBar {
+    height: 100%;
+    background-color: grey;
+    width: 0%; /* Start with no width */
+
+}
+
+
+#songList option.playing {
+    color: rgb(2, 193, 114); /* Highlight for the current song */
+    font-weight: bold;
+    font-style: italic;
+}
+
+#currentSongInfo {
+    text-align: center; /* Centers the text */
+    color: #000; /* Set the text color */
+    margin-top: 10px; /* Spacing above the text */
+}

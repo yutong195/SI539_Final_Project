@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style_about_me.css" /> 
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <script src="js/animation.js"></script>
+    <script src="js/song_player.js"></script>
     <title>About Me</title>
 </head>
 <body>
@@ -31,6 +32,40 @@
                 enhance people's abilities and bring social care.</p>
         </div>
         
+    </div>
+
+    <div class="hci-section">
+        <h1>My understanding of Human-Computer Interaction</h1>
+        <blockquote>
+            "I regard HCI as a bridge connecting people with machines where we take advantage of machines to address issues in people's lives. This is where I find my role and keeps me motivated—using knowledge and creativity to serve society and make an impact."
+        </blockquote>
+        <!-- <footer class="hci-footer">
+            <p>Yutong Ren</p>
+            <p>rentony@umich.edu</p>
+        </footer> -->
+    </div>
+
+    <div class="songPlayer">
+        <div id="musicPlayer" class="hidden">
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
+            <p id="currentSongInfo"></p>
+            <select id="songList">
+                <option value="Perfect-Ed.mp3">Perfect-Ed Shareen</option>
+                <option value="Photograph-Ed.mp3">Photograph-Ed Shareen</option>
+                <option value="River Flows In You-Yiruma">River Flows In You-Yiruma</option>
+                <option value="Drifting Cloud-Masaaki Kishibe.mp3">Drifting Cloud-Masaaki Kishibe</option>
+                <option value="Miracle Mountain-Masaaki Kishibe.mp3">Miracle Mountain-Masaaki Kishibe</option>
+
+                <!-- Add more songs here -->
+            </select>
+            <button id="prevSong">Previous</button>
+            <button id="playPause">Play/Pause</button>
+            <button id="nextSong">Next</button>
+        </div>
+        
+        <button id="togglePlayer">Show/Hide Player</button>
     </div>
     
 </body>
