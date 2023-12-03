@@ -20,14 +20,6 @@ body {
     animation-iteration-count: 1;
 }
 
-.portfolio_grid{
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));;
-    justify-content:center;
-    align-items: start;
-    gap: 20px;
-}
-
 .about_me a{
     position: absolute;
     top: 0;
@@ -39,6 +31,26 @@ body {
 .about_me a:hover{
     text-decoration: underline wavy;
     color: purple;
+}
+.portfolio_grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));;
+    justify-content:center;
+    align-items: start;
+    gap: 20px;
+    justify-items: center;
+}
+
+.AR_VR_container {
+    display: flex; /* Enables Flexbox */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: center; /* Align items to the start of the container */
+}
+
+.AR_VR_container img {
+    width: 50px; /* Adjust the size of the image as needed */
+    height: auto; /* Maintain the aspect ratio of the image */
+    margin-left: 10px; /* Optional: Adds some space between the text and the image */
 }
 
 .contact{
@@ -60,6 +72,11 @@ body {
 .vr_facial_expression {
     position: relative;
     width: 60%; /* Adjust as needed */
+    border: black solid 3px;
+    background-color: #fffee6;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 2);
+    /* left: 100px; */
 }
 
 .vr_facial_expression img{
@@ -69,27 +86,55 @@ body {
     transition: opacity 0.3s ease;
 }
 
-.vr_facial_expression div {
+.vr_facial_expression .hover {
     position: absolute;
-    bottom: -20px;
-    left: 20px;  
+    /* bottom: -20px;
+    left: 20px;   */
     font-size: 16px; 
     border: solid 2px rgb(0, 168, 163);
     padding: 6px 8px;
     background-color: #fffee6;
     color: rgb(0, 168, 163);
+    top: 55%; 
+    left: 7%; 
+    
+}
+
+/* Hide the tap button initially */
+.vr_facial_expression .tap {
+    position: absolute;
+    /* bottom: -20px;
+    left: 20px;   */
+    font-size: 16px; 
+    border: solid 2px rgb(0, 168, 163);
+    padding: 6px 8px;
+    background-color: #fffee6;
+    color: rgb(0, 168, 163);
+    top: 55%; 
+    left: 7%; 
+    opacity: 0;
+    
+}
+
+.vr_facial_expression:hover .hover {
+    opacity: 0; /* Image fades */
+}
+
+.vr_facial_expression:hover .tap {
+    opacity: 1; /* Text appears */
 }
 
 .vr_facial_expression h3{
     max-width: 400px;
     text-decoration: underline;
+    text-align: center;
 }
 
 .vr_facial_expression p{
     /* max-width: 400px;
     color: rgb(0, 168, 163); */
     position: absolute;
-    top: 50%; /* Center vertically */
+    top: 30%; /* Center vertically */
     left: 50%; /* Center horizontally */
     transform: translate(-50%, -50%); /* Adjust for exact centering */
     color: white; /* Choose color that is visible on your images */
@@ -97,13 +142,18 @@ body {
     transition: opacity 0.3s ease;
     /* text-align: center; */
     background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     /* max-width: 200%; */
-    width: 250px;
+    width: 300px;
+    font-size: 0.9em;
     /* box-sizing: border-box; */
-    
 }
+
+.vr_facial_expression p span{
+    font-weight: bold;
+}
+
 
 /* Hover effects */
 .vr_facial_expression:hover img {
