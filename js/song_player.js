@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function updateSongInfoDisplay() {
-        var songName = songs[currentSongIndex].split('\\').pop(); // Get the file name
+        var songName = songs[currentSongIndex].split('/').pop(); // Get the file name
         songName = songName.replace('.mp3', ''); // Remove .mp3 extension
         var songParts = songName.split('-'); // Assuming format is Title-Author.mp3
         var displayText = songParts[0] + ' by ' + songParts[1]; // Format: Title by Author
