@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     var audio = new Audio();
-    var basePath = 'C:\\UMich MSI\\2023 Fall Term\\SI 539\\Final Project\\Songs\\';
+    var basePath = 'Songs\\';
     var songs = ['Perfect-Ed Shareen.mp3','Photograph-Ed Shareen.mp3','River Flows In You-Yiruma.mp3',
     'Drifting Cloud-Masaaki Kishibe.mp3','Miracle Mountain-Masaaki Kishibe.mp3']; // Replace these with your actual song names
     songs = songs.map(song => basePath + song); // Prepend base path to each song name
