@@ -6,6 +6,28 @@ body {
     background-repeat: no-repeat; /* This prevents the image from repeating */
 }
 
+.skip_link {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    overflow: hidden;
+  }
+
+  .skip_link:focus {
+    top:0px;
+    left:0px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    z-index: 20;
+  }
+  
+
+
+
 
 @keyframes fadeIn {
     from { opacity: 0; }

@@ -76,6 +76,7 @@ body{
     font-size: 2em;
     grid-row: 1; /* Position in row 1 */
     grid-column: 2; /* Position in column 2 */
+    margin: 0;
 }
 
 .container p {
@@ -83,6 +84,8 @@ body{
     grid-column: 2; /* Position in column 2 */
     overflow: auto; /* In case the text is too much, it will be scrollable */
 }
+
+
 
 .hci-section {
     /* background: rgb(204, 230, 255, 0.9); */
@@ -104,6 +107,7 @@ blockquote {
     width: 60%; /* Adjust the width as needed */
     margin: 20px auto;
     line-height: 1.5;
+    text-align: start;
 }
 
 .hci-footer p {
@@ -111,6 +115,53 @@ blockquote {
     font-size: 1.2em;
     font-weight: bold;
 }
+
+/* hci section sliding */
+.hci_section_all{
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToLeft {
+    0% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+
+.hci-section-visible {
+    animation: slideInFromLeft 2s ease-out forwards;
+}
+
+.hci-section-hidden {
+    animation: slideOutToLeft 2s ease-out forwards;
+}
+
+
+
+
+
+
 
 /* for song player styling */
 .hidden {
