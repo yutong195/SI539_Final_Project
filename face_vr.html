@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_face_vr.css" />
     <title>FaceVR</title>
 </head>
 <body>
@@ -22,5 +23,35 @@
         
         
     </div>
+
+
+
+
+    <div class="songPlayer">
+        <div id="musicPlayer" class="hidden">
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
+            <p id="currentSongInfo"></p>
+            <select id="songList">
+                <option value="Perfect-Ed.mp3">Perfect-Ed Shareen</option>
+                <option value="Photograph-Ed.mp3">Photograph-Ed Shareen</option>
+                <option value="River Flows In You-Yiruma">River Flows In You-Yiruma</option>
+                <option value="Drifting Cloud-Masaaki Kishibe.mp3">Drifting Cloud-Masaaki Kishibe</option>
+                <option value="Miracle Mountain-Masaaki Kishibe.mp3">Miracle Mountain-Masaaki Kishibe</option>
+
+                <!-- Add more songs here -->
+            </select>
+            <button id="prevSong">Previous</button>
+            <button id="playPause">Play</button>
+            <button id="nextSong">Next</button>
+        </div>
+        
+        <button id="togglePlayer">Show Player</button>
+    </div>
+
+
+
+    <script src="js/song_player.js"></script>
 </body>
 </html>
