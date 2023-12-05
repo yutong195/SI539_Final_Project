@@ -254,6 +254,11 @@ h1, h2, h3, p {
         padding-top: 0; /* Remove any additional padding that might be creating space */
     }
 
+    .research_description video{
+        width: 360px;
+        height: 240px;
+    }
+
     .songPlayer {
         bottom: 0;
         right: 0;
