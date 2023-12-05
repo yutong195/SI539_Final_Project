@@ -265,6 +265,7 @@ blockquote {
     }
 
     .container {
+        display: grid;
         border-radius: 20px;
         top: 10px;
         grid-template-columns: 1fr; /* Define a single column */
@@ -296,7 +297,6 @@ blockquote {
         overflow: auto; /* Keep overflow as auto */
         text-align: left;
     }
-
 
 
 

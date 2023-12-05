@@ -37,54 +37,60 @@ body {
 }
 
 .content_wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns with the second column twice the width of the first */
+    grid-template-rows: auto auto; /* Two rows */
+    align-items: start; /* Align items to the start of the container vertically */
+    justify-content: center; /* Center items horizontally */
     background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
     border: 3px solid #ADD8E6; /* Light blue border */
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); /* Optional: adds a subtle shadow */
-    max-width: 1200px; /* Adjust the width as necessary */
     margin: auto; /* This will center the border-box if within a flex container */
     margin-bottom: 25px;
+    gap: 10px; /* Space between the grid items */
 }
 
+/* Ensure that default margins on headings and paragraphs are not adding extra space */
+h1, h2, h3, p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 .avatar_image {
-    flex: 1;
-    padding-right: 20px; 
+    grid-column: 1 / 2; /* Takes up the first column */
+    grid-row: 1 / 3; /* Spans both rows */
+    /* Removed flex property as it's not needed in grid */
 }
 
 .avatar_image img {
-    width: 100%;
-    max-width: 300px; 
+    width: 100%; /* Full width of the grid area */
+    height: auto; /* Maintain aspect ratio */
+    /* max-width: 300px; If you want to limit the image size, otherwise it will fill the grid area */
 }
 
 .text_content {
-    flex: 2;
-    color: black; 
+    grid-column: 2 / 3; /* Takes up the second column */
+    grid-row: 1 / 2; /* Takes up the first row */
+    /* Removed flex property as it's not needed in grid */
     text-align: left;
+    margin-bottom: 0;
+    font-size: 0.9em;
+    padding-bottom: 0px;
 }
 
-.text_content h1 {
-    font-size: 1.6em; 
+.text_content_inner {
+    grid-column: 2 / 3; /* Takes up the second column */
+    grid-row: 2 / 3; /* Takes up the second row */
+    text-align: left;
+    /* If there is any specific styling for text_content_inner, it should be added here */
 }
 
-.text_content h3 {
-    font-size: 1em; 
-}
+/* No changes needed for .text_content h1, .text_content h3, .text_content p, .links a */
 
-.text_content p {
-    font-size: 1.1em; 
-}
 
-.links a {
-    text-decoration: none;
-    color: black;
-    margin-right: 10px;
-}
 
 
 .research_description {
@@ -186,3 +192,83 @@ body {
     margin-top: 10px; 
     margin-bottom: 5px;
 }
+
+
+/* response design for phone */
+@media screen and (max-width: 600px) {
+
+    .navigation {
+        top: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        width: auto; /* Width as wide as its content */
+        flex-direction: row;
+        align-items: flex-end; /* Align items to the right */
+        padding: 5px;
+    }
+
+    .navigation a {
+        margin: 0 0 5px; /* Adjust spacing between links */
+        padding: 10px;
+    }
+
+    .content_wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: start;
+        margin-top: 10px;
+        padding: 20px;
+        text-align: center;
+        max-width: 800px;
+    }
+
+    .avatar_image {
+        grid-column: 1;
+        grid-row: 2; /* Position the avatar image in the second row */
+        width: 100%; /* Make sure the container spans the full width */
+        height: auto;
+    }
+
+    .avatar_image img {
+        width: 100%; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensure the image is not set to display: none */
+    }
+
+
+    .text_content {
+        grid-row: 1 ; /* Position the text content in the first row */
+        grid-column: 1;
+    }
+
+    .text_content h1 {
+        font-size: 1.4em;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .text_content_inner {
+        grid-row: 3; /* Position the text content inner in the third row */
+        grid-column: 1;
+        padding-top: 0; /* Remove any additional padding that might be creating space */
+    }
+
+    .songPlayer {
+        bottom: 0;
+        right: 0;
+        top: auto; /* Remove the top positioning */
+        transform: none; /* Remove transform */
+        width: auto; /* Width as wide as its content */
+    }
+
+    #songList {
+        width: 90%; /* Increase width for easier selection */
+    }
+
+    .header h1, .contact h2 {
+        font-size: 1.5em; /* Adjust font size for readability */
+    }
+
+}
+
