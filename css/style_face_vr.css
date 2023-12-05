@@ -20,6 +20,8 @@ body {
     padding: 10px;
     background: rgba(255, 255, 255, 0.5); 
     margin-left: auto;
+    border-radius: 20px;
+    margin-bottom: 10px;
 }
 
 .navigation a {
@@ -42,6 +44,7 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
     max-width: 1200px; /* Adjust the width as necessary */
     margin: auto; /* This will center the border-box if within a flex container */
+    margin-bottom: 25px;
 }
 
 .avatar_image {
@@ -76,6 +79,41 @@ body {
     text-decoration: none;
     color: black;
     margin-right: 10px;
+}
+
+
+.research_description {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border: 3px solid #ADD8E6; /* Light blue border */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Optional: adds a subtle shadow */
+    max-width: 1200px; /* Adjust the width as necessary */
+    margin: auto; /* This will center the border-box if within a flex container */
+}
+
+.research_description h2{
+    text-align: center;
+}
+
+.research_description p{
+    text-align: left; /* Align text to the left */
+    margin: 0 auto; /* Center the paragraph in the container */
+    max-width: 1000px; /* Maximum width of the paragraph content */
+    display: block; 
+}
+
+.research_description video {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 640px; 
+}
+
+.video_des {
+    text-align: center;
+    margin: 0 auto; /* Centers the element within its container */
+    max-width: 640px; /* Set this to match the video width or as needed */
+    display: block; /* Ensures it's treated as a block-level element */
 }
 
 
