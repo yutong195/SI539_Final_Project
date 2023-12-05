@@ -83,7 +83,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     document.getElementById('songList').addEventListener('change', function(e) {
-        currentSongIndex = songs.indexOf(basePath + e.target.value);
+        // Find the index of the selected song in the songs array
+        var selectedSong = basePath + e.target.value;
+        currentSongIndex = songs.findIndex(song => song === selectedSong);
+    
+        // Play the selected song
         playSong(currentSongIndex);
     });
 
