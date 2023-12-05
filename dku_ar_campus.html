@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style_dku_ar_campus.css" />
     <title>DKU AR Campus</title>
 </head>
 <body>
+    <div class="header">
+        <nav class="navigation">
+            <a href="index.html">Portfolio</a>
+            <a href="about_me.html">About Myself</a>
+        </nav>
+        <div class="content_wrapper">
+            <div class="dku_ar_image">
+                <img src="images/DKU AR Campus/cover.png" alt="The cover image for facevr project">
+            </div>
+
+            <div class="text_content">
+                <h1>DKU AR Campus: a Geo-located Augmented Reality Application 
+                    to Enhance Social Collaboration</h1>
+                  
+                <h3 class="role">Leading Developer | AR Design&Development | Interdisciplinary Collaboration</h3>
+                <p class="basic_info">Teammates: Qingyang He, Ruiqi Chen, Weiran Li, Hanxi Bao (all from Duke Kunshan University)
+                    <br>Supervisors: Prof. Xin Tong (Duke Kunshan University)
+                    <br>Time: 11/2021-05/2023</p>
+                <div class="links">
+                    <a href="https://github.com/yutong195/DKU-AR-Campus">[Code]</a>
+                    <a href="https://www.youtube.com/watch?v=g-zo4GsaPHg">[Video]</a>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <div class="main_content">
+        <div class="research_description">
+            <h2>——Project Descriptions——</h2>
+            <p>DKU AR Campus is a geo-located augmented reality App designed for 
+                Duke Kunshan University community. Community members check out relevant 
+                information about campus buildings when near these buildings. 
+                They can also build up social interactions with others through this 
+                online platform with other App features such as doodling.</p>
+            <video width="480" height="360" controls  preload="auto">
+                <source src="videos/dku_ar_campus.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h4 class="video_des">Demo video</h4>
+        </div>
+    </div>
+
+
+    <div class="songPlayer">
+        <div id="musicPlayer" class="hidden">
+            <div id="progressBarContainer">
+                <div id="progressBar"></div>
+            </div>
+            <p id="currentSongInfo"></p>
+            <select id="songList">
+                <option value="Perfect-Ed.mp3">Perfect-Ed Shareen</option>
+                <option value="Photograph-Ed.mp3">Photograph-Ed Shareen</option>
+                <option value="River Flows In You-Yiruma">River Flows In You-Yiruma</option>
+                <option value="Drifting Cloud-Masaaki Kishibe.mp3">Drifting Cloud-Masaaki Kishibe</option>
+                <option value="Miracle Mountain-Masaaki Kishibe.mp3">Miracle Mountain-Masaaki Kishibe</option>
+
+                <!-- Add more songs here -->
+            </select>
+            <button id="prevSong">Previous</button>
+            <button id="playPause">Play</button>
+            <button id="nextSong">Next</button>
+        </div>
+        
+        <button id="togglePlayer">Show Player</button>
+    </div>
+
+
+
+    <script src="js/song_player.js"></script>
     
 </body>
 </html>

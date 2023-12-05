@@ -1,0 +1,191 @@
+body {
+    /* background-color: #fffee6; */
+    background-image: url("../images/Main Page/main_background.jpg");
+    background-size: cover; /* This ensures the image covers the whole body */
+    background-position: center; /* This centers the image in the body */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.5); 
+    margin-left: auto;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px; /* Space out the navigation links */
+    font-size: 1.2em;
+}
+
+.navigation a:hover{
+    text-decoration: underline wavy;
+    color: purple;
+}
+
+.content_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border: 3px solid #ADD8E6; 
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); /* Optional: adds a subtle shadow */
+    max-width: 1200px; /* Adjust the width as necessary */
+    margin: auto; /* This will center the border-box if within a flex container */
+    margin-bottom: 25px;
+}
+
+.dku_ar_image {
+    flex: 1;
+    padding-right: 20px; 
+}
+
+.dku_ar_image img {
+    width: 100%;
+    max-width: 300px; 
+}
+
+.text_content {
+    flex: 2;
+    color: black; 
+    text-align: left;
+}
+
+.text_content h1 {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 1.6em; 
+}
+
+.text_content h3 {
+    font-size: 1em; 
+}
+
+.text_content p {
+    font-size: 1em; 
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+
+.research_description {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border: 3px solid #ADD8E6; /* Light blue border */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); /* Optional: adds a subtle shadow */
+    max-width: 1200px; /* Adjust the width as necessary */
+    margin: auto; /* This will center the border-box if within a flex container */
+}
+
+.research_description h2{
+    text-align: center;
+}
+
+.research_description p{
+    text-align: left; /* Align text to the left */
+    margin: 0 auto; /* Center the paragraph in the container */
+    max-width: 1000px; /* Maximum width of the paragraph content */
+    display: block; 
+    padding-bottom: 10px;
+}
+
+.research_description video {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 640px; 
+}
+
+.video_des {
+    text-align: center;
+    margin: 0 auto; /* Centers the element within its container */
+    max-width: 640px; /* Set this to match the video width or as needed */
+    display: block; /* Ensures it's treated as a block-level element */
+}
+
+
+
+
+
+/* for song player styling */
+.hidden {
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+/* #musicPlayer {
+    
+} */
+.songPlayer {
+    position: fixed; /* Fixed position relative to the viewport */
+    top: 90%; /* Vertically center */
+    right: 0; /* Align to the right side */
+    transform: translateY(-50%); /* Vertically center with respect to its own height */
+    /* Your existing styles for songPlayer */
+    border: solid black 3px;
+    background-color: #fffee6;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+
+#progressBarContainer {
+    width: 80%; /* One-third of the screen width */
+    height: 8px;
+    background-color: black;
+    margin: auto; /* Center the progress bar */
+    cursor: pointer;
+}
+
+#progressBar {
+    height: 100%;
+    background-color: grey;
+    width: 0%; /* Start with no width */
+
+}
+
+#songList{
+    width: 30%;
+    display: block; /* Change its display property to block */
+    margin: 0 auto; /* Auto margins on both sides */
+    margin-bottom: 5px;
+}
+
+#songList option.playing {
+    color: rgb(2, 193, 114); /* Highlight for the current song */
+    font-weight: bold;
+    font-style: italic;
+}
+
+#currentSongInfo {
+    text-align: center; /* Centers the text */
+    color: #000; /* Set the text color */
+    margin-top: 10px; /* Spacing above the text */
+    margin-bottom: 5px;
+}
+

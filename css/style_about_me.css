@@ -177,11 +177,11 @@ blockquote {
 }
 
 .hci-section-visible {
-    animation: slideInFromLeft 2s ease-out forwards;
+    animation: slideInFromLeft 1.5s ease-out forwards;
 }
 
 .hci-section-hidden {
-    animation: slideOutToLeft 2s ease-out forwards;
+    animation: slideOutToLeft 1.5s ease-out forwards;
 }
 
 
