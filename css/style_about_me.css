@@ -13,8 +13,24 @@ body{
     font-style: italic;
 }
 
+.skip_link {
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    overflow: hidden;
+  }
 
-
+  .skip_link:focus {
+    top:0px;
+    left:0px;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    z-index: 20;
+  }
 
 @keyframes popEffect {
     from { opacity: 0; transform: scale(0); }
