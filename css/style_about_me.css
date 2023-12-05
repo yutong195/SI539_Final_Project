@@ -135,12 +135,7 @@ blockquote {
     margin: 20px auto;
     line-height: 1.5;
     text-align: start;
-}
-
-.hci-footer p {
-    margin: 10px 0;
-    font-size: 1.2em;
-    font-weight: bold;
+    max-width: 800px;
 }
 
 /* hci section sliding */
@@ -247,5 +242,79 @@ blockquote {
     color: #000; 
     margin-top: 10px; 
     margin-bottom: 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .navigation {
+        top: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        width: auto; /* Width as wide as its content */
+        flex-direction: column;
+        align-items: flex-end; /* Align items to the right */
+        padding: 5px;
+    }
+
+    .navigation a {
+        margin: 0 0 5px; /* Adjust spacing between links */
+    }
+
+    .blue_overlay{
+        border-radius: 10px;
+        top: 0px;
+    }
+
+    .container {
+        border-radius: 20px;
+        top: 10px;
+        grid-template-columns: 1fr; /* Define a single column */
+        grid-template-rows: auto auto auto; /* Define three rows */
+        justify-items: center; /* Center items horizontally */
+        align-items: start; /* Align items to the start of the container vertically */
+        text-align: center; /* Center text within each grid item */
+        width: auto; /* Set width to auto to allow container to resize based on content */
+        max-width: 800px; /* Optional: if you want to limit the width of the container */
+    }
+
+    .container img {
+        width: 60%; /* Adjust the width as needed */
+        height: auto; /* Keep the image's aspect ratio */
+        grid-column: 1; /* Place the image in the first column */
+        grid-row: 1; /* Place the image in the first row */
+    }
+
+    .container h3 {
+        grid-column: 1; /* Place the heading in the first column */
+        grid-row: 2; /* Place the heading in the second row */
+        font-size: 2em; /* Adjust font size as needed */
+        margin: 0.5em 0; /* Adjust margin as needed */
+    }
+
+    .container p {
+        grid-column: 1; /* Place the paragraph in the first column */
+        grid-row: 3; /* Place the paragraph in the third row */
+        overflow: auto; /* Keep overflow as auto */
+        text-align: left;
+    }
+
+
+
+
+    .songPlayer {
+        bottom: 0;
+        right: 0;
+        top: auto; /* Remove the top positioning */
+        transform: none; /* Remove transform */
+        width: auto; /* Width as wide as its content */
+    }
+
+    #songList {
+        width: 90%; /* Increase width for easier selection */
+    }
+
+    .header h1, .contact h2 {
+        font-size: 1.5em; /* Adjust font size for readability */
+    }
+
 }
 

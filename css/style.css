@@ -124,6 +124,7 @@ body {
     background-color: #fffee6;
     border-radius: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 2);
+    align-items: center;
     /* left: 100px; */
 }
 
@@ -175,7 +176,7 @@ body {
 .vr_facial_expression h3{
     max-width: 400px;
     text-decoration: underline;
-    text-align: center;
+    text-align: left;
 }
 
 .vr_facial_expression p{
@@ -273,7 +274,7 @@ body {
 .dku_ar_campus h3{
     max-width: 400px;
     text-decoration: underline;
-    text-align: center;
+    text-align: left;
 }
 
 .dku_ar_campus p{
@@ -390,4 +391,74 @@ body {
     color: #000; 
     margin-top: 10px; 
     margin-bottom: 5px;
+}
+
+
+/* responsive design for phone size screen */
+/* Media query for phone screens */
+@media screen and (max-width: 600px) {
+    /* Adjust the navigation bar for smaller screens */
+    /* Adjust the portfolio grid to a single column layout */
+    .portfolio_grid {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 20px; /* Adjust the gap as needed */
+        justify-items: center; /* Center items in the grid */
+    }
+
+    .navigation {
+        top: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        width: auto; /* Width as wide as its content */
+        flex-direction: column;
+        align-items: flex-end; /* Align items to the right */
+        padding: 5px;
+    }
+
+    .navigation a {
+        margin: 0 0 5px; /* Adjust spacing between links */
+    }
+
+    .AR_VR {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw; /* Full viewport width */
+    }
+
+    .AR_VR_container {
+        display: flex;
+        justify-content: center; /* Horizontally center content */
+        align-items: center; /* Vertically center content */
+        height: auto; /* Take up the full height of .AR_VR */
+        width: 100%; /* Take up the full width of .AR_VR */
+    }
+
+    .AR_VR_container img {
+        width: 8%;   
+    }
+
+    .dku_ar_campus{
+        
+        width: 60%; /* Adjust as needed */
+        
+    }
+
+    .songPlayer {
+        bottom: 0;
+        right: 0;
+        top: auto; /* Remove the top positioning */
+        transform: none; /* Remove transform */
+        width: auto; /* Width as wide as its content */
+    }
+
+    #songList {
+        width: 90%; /* Increase width for easier selection */
+    }
+
+    .header h1, .contact h2 {
+        font-size: 1.5em; /* Adjust font size for readability */
+    }
+
+    /* Adjust any other elements as needed for smaller screens */
 }
