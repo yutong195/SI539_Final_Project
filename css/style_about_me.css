@@ -204,7 +204,7 @@ blockquote {
     position: fixed; 
     top: 90%; 
     right: 0; 
-    transform: translateY(-50%); 
+    transform: translateY(-65%); 
     
     border: solid black 3px;
     background-color: #fffee6;
