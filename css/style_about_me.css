@@ -240,19 +240,20 @@ blockquote {
     margin-bottom: 5px;
 }
 
+/* Responsive design for mobile view */
 @media screen and (max-width: 600px) {
 
     .navigation {
-        top: 10px; /* Adjust as needed */
-        right: 10px; /* Adjust as needed */
-        width: auto; /* Width as wide as its content */
+        top: 10px;
+        right: 10px; 
+        width: auto; 
         flex-direction: column;
-        align-items: flex-end; /* Align items to the right */
+        align-items: flex-end; 
         padding: 5px;
     }
 
     .navigation a {
-        margin: 0 0 5px; /* Adjust spacing between links */
+        margin: 0 0 5px; 
     }
 
     .blue_overlay{
@@ -264,33 +265,33 @@ blockquote {
         display: grid;
         border-radius: 20px;
         top: 10px;
-        grid-template-columns: 1fr; /* Define a single column */
-        grid-template-rows: auto auto auto; /* Define three rows */
-        justify-items: center; /* Center items horizontally */
-        align-items: start; /* Align items to the start of the container vertically */
-        text-align: center; /* Center text within each grid item */
-        width: auto; /* Set width to auto to allow container to resize based on content */
-        max-width: 800px; /* Optional: if you want to limit the width of the container */
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto; 
+        justify-items: center; 
+        align-items: start; 
+        text-align: center; 
+        width: auto; 
+        max-width: 800px; 
     }
 
     .container img {
-        width: 60%; /* Adjust the width as needed */
-        height: auto; /* Keep the image's aspect ratio */
-        grid-column: 1; /* Place the image in the first column */
-        grid-row: 1; /* Place the image in the first row */
+        width: 60%; 
+        height: auto; 
+        grid-column: 1; 
+        grid-row: 1; 
     }
 
     .container h3 {
-        grid-column: 1; /* Place the heading in the first column */
-        grid-row: 2; /* Place the heading in the second row */
-        font-size: 2em; /* Adjust font size as needed */
-        margin: 0.5em 0; /* Adjust margin as needed */
+        grid-column: 1; 
+        grid-row: 2; 
+        font-size: 2em; 
+        margin: 0.5em 0; 
     }
 
     .container p {
-        grid-column: 1; /* Place the paragraph in the first column */
-        grid-row: 3; /* Place the paragraph in the third row */
-        overflow: auto; /* Keep overflow as auto */
+        grid-column: 1; 
+        grid-row: 3; 
+        overflow: auto; 
         text-align: left;
     }
 
@@ -299,17 +300,17 @@ blockquote {
     .songPlayer {
         bottom: 0;
         right: 0;
-        top: auto; /* Remove the top positioning */
-        transform: none; /* Remove transform */
-        width: auto; /* Width as wide as its content */
+        top: auto; 
+        transform: none; 
+        width: auto; 
     }
 
     #songList {
-        width: 90%; /* Increase width for easier selection */
+        width: 90%; 
     }
 
     .header h1, .contact h2 {
-        font-size: 1.5em; /* Adjust font size for readability */
+        font-size: 1.5em; 
     }
 
 }

@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
         'River Flows In You_Yiruma.mp3',
         'Drifting Cloud_Masaaki Kishibe.mp3',
         'Miracle Mountain_Masaaki Kishibe.mp3'
-    ]; // Replace these with your actual song names
-    songs = songs.map(song => basePath + song); // Prepend base path to each song name
+    ]; 
+    songs = songs.map(song => basePath + song); 
 
     var currentSongIndex = 0;
 
